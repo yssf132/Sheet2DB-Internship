@@ -122,29 +122,23 @@ Then configure your MongoDB URI and other settings as needed for your version.
 
 #### File Upload Interface
 ![Upload Interface](docs/images/figure13-upload-interface.png)
-*Upload Interface*
 
 #### Data Preview Interface
 ![Data Preview Interface](docs/images/figure15-data-preview.png)
-*Data Preview Interface*
 
 #### Column Selection Interface
 ![Column Selection Interface](docs/images/figure16-column-selection.png)
-*Column Selection Interface*
 
 #### Successful Import Interface
 ![Successful Import Interface](docs/images/figure17-import-success.png)
-*Successful Import Interface*
 
 #### Error Message Interface
 ![Error Message Interface](docs/images/figure18-error-message.png)
-*Error Message Interface*
 
 ### Version 2 - Multi-Sheet Support
 
 #### Multi-Tab Interface
 ![Multi-Tab Interface](docs/images/figure19-multi-tabs.png)
-*Multi-Tab Interface*
 
 ## 🛠️ Technology Stack
 
