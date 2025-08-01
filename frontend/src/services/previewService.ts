@@ -15,7 +15,7 @@ export interface PreviewData {
 }
 
 export const fetchPreviewData = async (id: string): Promise<PreviewData> => {
-    const response = await fetch(`${env.API_BASE_URL}/preview/${id}`);
+    const response = await fetch(`${env.API_BASE_URL}/api/preview/${id}`);
 
     if (!response.ok) {
         throw new Error(`Failed to fetch preview data: ${response.statusText}`);

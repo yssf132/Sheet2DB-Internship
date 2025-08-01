@@ -19,7 +19,7 @@ export const uploadFile = async (file: File) => {
   const formData = new FormData();
   formData.append('file', file);
   
-  const response = await fetch(`${env.API_BASE_URL}/upload`, {
+  const response = await fetch(`${env.API_BASE_URL}/api/upload`, {
     method: 'POST',
     body: formData
   });

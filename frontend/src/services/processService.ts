@@ -11,7 +11,7 @@ export interface ProcessColumnsRequest {
 }
 
 export const processColumns = async (data: ProcessColumnsRequest) => {
-  const response = await fetch(`${env.API_BASE_URL}/validate-and-import`, {
+  const response = await fetch(`${env.API_BASE_URL}/api/validate-and-import`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
