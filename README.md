@@ -78,15 +78,13 @@ This repository contains multiple versions of the application, each with enhance
 
 ### Environment Configuration
 
-Create a `.env` file in the backend directory:
+Create a `.env` file in the backend directory by copying the example:
 
-```env
-PORT=5000
-MONGODB_URI=mongodb://localhost:27017/sheet2db
-JWT_SECRET=your-secret-key-here
-JWT_EXPIRES_IN=7d
-CORS_ORIGIN=http://localhost:5173
+```bash
+cp .env.example .env
 ```
+
+Then configure your MongoDB URI and other settings as needed for your version.
 
 ## 🎯 Key Features
 
@@ -120,14 +118,33 @@ CORS_ORIGIN=http://localhost:5173
 
 ## 📸 Screenshots
 
-### File Upload Interface
-![Upload Interface](frontend/src/assets/upload-interface.png)
+### Version 1 & 2 Interface
 
-### Data Preview & Column Selection
-![Data Preview](frontend/src/assets/data-preview.png)
+#### File Upload Interface
+![Upload Interface](docs/images/figure13-upload-interface.png)
+*Upload Interface*
 
-### Multi-Sheet Support
-![Multi-Sheet](frontend/src/assets/multi-sheet.png)
+#### Data Preview Interface
+![Data Preview Interface](docs/images/figure15-data-preview.png)
+*Data Preview Interface*
+
+#### Column Selection Interface
+![Column Selection Interface](docs/images/figure16-column-selection.png)
+*Column Selection Interface*
+
+#### Successful Import Interface
+![Successful Import Interface](docs/images/figure17-import-success.png)
+*Successful Import Interface*
+
+#### Error Message Interface
+![Error Message Interface](docs/images/figure18-error-message.png)
+*Error Message Interface*
+
+### Version 2 - Multi-Sheet Support
+
+#### Multi-Tab Interface
+![Multi-Tab Interface](docs/images/figure19-multi-tabs.png)
+*Multi-Tab Interface*
 
 ## 🛠️ Technology Stack
 
