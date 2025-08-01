@@ -8,16 +8,18 @@ A modern web application for seamlessly importing Excel and CSV files into Mongo
 
 Sheet2DB simplifies the process of importing structured data from spreadsheet files into MongoDB databases. Built with modern web technologies, it provides a user-friendly interface for data validation, column selection, and automated database insertion.
 
+*This project was developed during an internship at **Norsys**, focusing on modern web development practices and database integration solutions.*
+
 ## 🏗️ Project Structure
 
 This repository contains multiple versions of the application, each with enhanced features:
 
 ### Repository Branches
 
-- **`main`** - Stable production version (v1)
+- **`main`** - Latest stable version (v3) with authentication
 - **`v1`** - Initial version with single-sheet support
 - **`v2`** - Enhanced version with multi-sheet Excel support  
-- **`v3`** - Latest development version with authentication (based on v2)
+- **`dev`** - Development branch (v3 features)
 
 ### Version Features
 
@@ -45,14 +47,17 @@ This repository contains multiple versions of the application, each with enhance
 
 2. **Choose your version**
    ```bash
-   # For stable version (v1)
+   # For latest version with authentication (v3)
    git checkout main
+   
+   # For single-sheet support (v1)
+   git checkout v1
    
    # For multi-sheet support (v2)
    git checkout v2
    
-   # For latest with authentication (v3)
-   git checkout v3
+   # For development version
+   git checkout dev
    ```
 
 3. **Backend Setup**
@@ -108,10 +113,21 @@ CORS_ORIGIN=http://localhost:5173
 - Multi-sheet processing (v2+)
 - Batch operations
 
-### 🔐 Security (v3)
+### 🔐 Security
 - JWT-based authentication
 - Secure API endpoints
 - User session management
+
+## 📸 Screenshots
+
+### File Upload Interface
+![Upload Interface](frontend/src/assets/upload-interface.png)
+
+### Data Preview & Column Selection
+![Data Preview](frontend/src/assets/data-preview.png)
+
+### Multi-Sheet Support
+![Multi-Sheet](frontend/src/assets/multi-sheet.png)
 
 ## 🛠️ Technology Stack
 
@@ -129,7 +145,7 @@ CORS_ORIGIN=http://localhost:5173
 - **MongoDB** - NoSQL database
 - **Mongoose** - ODM library
 - **Multer** - File upload handling
-- **JWT** - Authentication (v3)
+- **JWT** - Authentication
 
 ### Development Tools
 - **Figma** - UI/UX Design
@@ -176,44 +192,13 @@ The project was developed using Agile methodologies with:
 4. Push to the branch (`git push origin feature/new-feature`)
 5. Open a Pull Request
 
-## 📝 API Documentation
+## 🏢 Acknowledgments
 
-### Main Endpoints
-
-```
-POST /api/upload          # Upload file
-GET  /api/preview/:id     # Preview file data
-POST /api/validate-and-import  # Validate and import data
-```
-
-## 🔧 Development Commands
-
-```bash
-# Backend
-npm run dev      # Start development server
-npm run build    # Build for production
-npm run start    # Start production server
-
-# Frontend  
-npm run dev      # Start development server
-npm run build    # Build for production
-npm run preview  # Preview production build
-```
+This project was developed during an internship program at **[Norsys](https://www.norsys.fr)**, a leading IT consulting and software development company. Special thanks to the Norsys team for their guidance and support throughout the development process.
 
 ## 📄 License
 
 This project is licensed under the ISC License.
-
-## 👥 Team
-
-Developed as part of an internship project focusing on modern web development practices and database integration.
-
-## 🔗 Links
-
-- [MongoDB Documentation](https://www.mongodb.com/)
-- [React Documentation](https://react.dev/)
-- [Node.js Documentation](https://nodejs.org/)
-- [TypeScript Documentation](https://www.typescriptlang.org/)
 
 ---
 
