@@ -140,6 +140,11 @@ Then configure your MongoDB URI and other settings as needed for your version.
 #### Multi-Tab Interface
 ![Multi-Tab Interface](docs/images/figure19-multi-tabs.png)
 
+### Version 3 - Authentication
+
+#### Login Interface
+![Login Interface](docs/images/login-interface.png)
+
 ## 🛠️ Technology Stack
 
 ### Frontend
